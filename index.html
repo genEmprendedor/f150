@@ -200,7 +200,7 @@
           <div>
             <section>
               <h2>contactenos</h2>
-              <form method="post" action="#">
+              <form method="POST" data-netlify-recaptcha="true" data-netlify="true">
                 <div class="fields">
                   <div class="field half">
                     <input
@@ -224,8 +224,12 @@
                       id="message"
                       rows="4"
                       placeholder="Mensaje"
-                    ></textarea>
-                  </div>
+					></textarea>					
+				  </div>
+				  <!-- ReCapcha-->
+				  <div class="recapcha">
+						<div data-netlify-recaptcha="true"></div>
+				  </div>
                 </div>
                 <ul class="actions">
                   <li><input type="submit" value="Send" class="primary" /></li>
